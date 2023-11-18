@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> 
+    <title>Portfolio</title>
+    <script src="https://kit.fontawesome.com/da5b281476.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <nav>
+                <img src="" class="logo">
+                <ul id="sidemenu"> 
+                   <li><a href="index.html">Home</a></li>
+                   <li><a href="about.html">About</a></li>
+                   <li><a href="contact.html" >Contact</a></li>
+                   <li><a href="services.html">Services</a></li>
+                   <li><a href="portfolio.html">Portfolio</a></li>
+                   <li><a href="certificate.html">Certificate</a></li>
+                   <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars"  onclick="openmenu()"></i>
+           </nav>
+           <div class="portfolio">
+            <div class="container">
+                <h2 class="mywork">My Work</h2>
+                <div class="all_work">
+                    <div class="works">
+                      <img src="https://www.thinktank.de/wp-content/uploads/2022/12/Tests-in-Softwareentwicklung.webp">
+                  
+                    <div class="screens">
+                        <h3>Software tester</h3>
+                        <p>Test Software to improve its overall functionality</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                        <div class="works">
+                            <img src="https://magenest.com/wp-content/uploads/2021/02/website-development-and-design-1.jpg">
+                            <div class="screens">
+                                <h3>Website Design</h3>
+                                <p>The website shows you some famous attractions of Thailand, Phuket</p>
+                                <a href="#">
+                                <i class="fa-sharp fa-regular fa-square-arrow-up-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        
+                            <div class="works">
+                                <img src="https://searchengineland.com/wp-content/seloads/2015/07/apps-mobile-smartphone-ss-1920.jpg">
+                                <div class="screens">
+                                    <h3>App Design</h3>
+                                    <p>The app to play mini games. Download from playstore</p>
+                                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                                </div>
+                            </div>
+                </div>
+               <a href="#" class="btn"> See more</a>
+            </div>
+           </div>
+           <script>
+            const sidemenu=document.getElementById("sidemenu");
+            function openmenu(){
+              sidemenu.style.right="0";
+            }
+            function closemenu(){
+              sidemenu.style.right="-200px";
+            }
+          </script>
+          
+</html>
